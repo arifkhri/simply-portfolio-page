@@ -7,7 +7,7 @@ export function middleware(request) {
   const destinationUrl = (url) => new URL(url, request.url)
 
   if(nextPathname === '/') {
-    return NextResponse.redirect(destinationUrl('/products'))
+    return NextResponse.redirect(destinationUrl('/profile'))
   }
 
   return NextResponse.next()

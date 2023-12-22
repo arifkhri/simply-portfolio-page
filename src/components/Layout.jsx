@@ -1,4 +1,6 @@
 import { Catamaran } from "next/font/google"
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const font = Catamaran({
   subsets: ["latin"],
@@ -8,10 +10,14 @@ const font = Catamaran({
 
 export default function RootLayout({ children }) {
   return (
+    <>
+      <Navbar />
       <main>
-        <div className={`${font.className} overflow-hidden main`}>
+        <div className={`${font.className} bg-slate-100 overflow-hidden main`}>
           {children}
         </div>
       </main>
+      <Footer />
+    </>
   )
 }

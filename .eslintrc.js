@@ -4,7 +4,11 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  plugins: [ 'unused-imports'],
+  plugins: [
+    'unused-imports',
+    "plugin:import/errors",
+    "plugin:import/warnings",
+  ],
   extends: [
     'eslint:recommended',
     'next',
@@ -13,7 +17,7 @@ module.exports = {
     "next/babel"
   ],
   rules: {
-    'no-unused-vars': 'off',
+    "import/named": "error",
     'no-console': 'warn',
     'react/no-unescaped-entities': 'off',
 

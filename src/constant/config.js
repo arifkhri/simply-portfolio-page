@@ -1,3 +1,3 @@
 export const siteConfig = {
-  title: 'simply-portofolio App',
+  title: 'simply-portfolio App',
 };

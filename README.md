@@ -7,8 +7,8 @@ simple product simply-portofolio app with:
 - and more
 
 #### Minimum Requirements
-* node `v18.17.0`
-* npm `8.19.2`
+* node `18.17.0`
+* npm `9.6.7`
 
 ### Getting Started
 
@@ -28,5 +28,4 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 |`dev` |Serves your app at `localhost:3000`|
 |`build`|Compiles the application to .next|
 |`start` |Serves your builded app at `localhost:3000`|
-|`test`|Runs all tests in sequence|
 |`lint`|Run javascript linter.|
